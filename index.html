@@ -1,0 +1,77 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+</head>
+<body>
+  <div id="main">
+    <!-- Hero Section -->
+    <section id="hero" class="section">
+      <div class="hero-container">
+        <div class="hero-text">
+          <h1>Jyothi Kummari</h1>
+          <h2>Frontend Web Developer</h2>
+          <button onclick="document.getElementById('projects').scrollIntoView()">View My Work</button>
+        </div>
+        <canvas id="three-canvas"></canvas>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="about-container">
+        <img src="https://res.cloudinary.com/di2lvrgp6/image/upload/v1749807679/Screenshot_2025-03-24_113657_ys5myc.png" alt="Profile Picture" class="profile-pic">
+        <p>Hello! I'm a passionate frontend developer skilled in building responsive and visually engaging websites. I love creating user-friendly experiences using HTML, CSS, JavaScript, and modern frameworks.</p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+  <div class="projects-container">
+    <div class="project">
+      <img src="https://res.cloudinary.com/di2lvrgp6/image/upload/v1749808894/Screenshot_2025-06-13_152724_dsi3hf.png" alt="Creative Portfolio">
+      <h3>Wikipedia search Application</h3>
+      <p>HTML, CSS, JS, REST API Calls, Bootstrap Unlock the vast wealth of knowledge on Wikipedia with a custom search application that delivers relevant and curated results.</p>
+      <a href="https://github.com/Nagajyothi41/wikipedia">View Project</a>
+    </div>
+    <div class="project">
+      <img src="https://res.cloudinary.com/di2lvrgp6/image/upload/v1749808934/Screenshot_2025-06-13_153033_xwy0vs.png" alt="Business Landing Page">
+      <h3>Todos Application</h3>
+      <p>HTML, CSS, JS, Bootstrap A task management solution, designed to make life easier.</p>
+      <a href="https://github.com/Nagajyothi41/todos_application">View Project</a>
+    </div>
+    <div class="project">
+      <img src="https://res.cloudinary.com/di2lvrgp6/image/upload/v1749810700/Screenshot_2025-06-13_160108_zqw98g.png" alt="Dashboard App UI">
+      <h3>AI-chatbot</h3>
+      <p>this chatbot like chatgpt. It is to users give equetions it will give answers.</p>
+      <a href="https://github.com/Nagajyothi41/AI-chatbot" >View Project</a>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="contact-container">
+        <form id="contact-form">
+          <input type="text" id="name" placeholder="Your Name" required>
+          <input type="email" id="email" placeholder="Your Email" required>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+          <p id="form-status"></p>
+        </form>
+      </div>
+    </section>
+  
+
+  </div>
+  <!-- JavaScript files -->
+  <script src="js/script.js"></script>
+</body>
+</html>
